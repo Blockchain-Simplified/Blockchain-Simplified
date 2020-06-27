@@ -4,6 +4,7 @@ blockchain folder conatain all blockchain realted files
 
 client folder contains client related files
 
+[More Info About Project](https://www.youtube.com/watch?v=c4v7UxfFjeQ&t)
 
 ## Docker Commands
 ```bash
