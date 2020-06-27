@@ -1,0 +1,58 @@
+<html>
+    <head>
+  
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ycodetech/horizontal-timeline-2.0@2/css/horizontal_timeline.2.0.min.css">
+    
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+   
+        
+        <script src="https://cdn.jsdelivr.net/gh/ycodetech/horizontal-timeline-2.0@2/JavaScript/horizontal_timeline.2.0.min.js"></script>   
+    
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand" />
+        <link rel="stylesheet" type="text/css" href="/static/css/pretty-json.css" />
+    
+        <!-- lib -->
+        <script type="text/javascript" src="/static/libs/jquery-1.11.1.min.js" ></script>
+        <script type="text/javascript" src="/static/libs/underscore-min.js" ></script>
+        <script type="text/javascript" src="/static/libs/backbone-min.js" ></script>
+        <style type="text/css">
+            body{
+                width:700px;
+                border-style: none;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            textarea{
+                width:600px;
+                padding:4px 7px;
+                border:1px solid #ccc;
+                border-radius:4px;
+                background:#fff;
+                color:#333;
+                margin-bottom:7px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="horizontal-timeline" id="example">
+            <div class="events-content">
+               <ol>
+                  <li class="selected" data-horizontal-timeline='{"date": "16/01/2014", "customDisplay": "Custom Text"}'>
+                     // Event description here
+                  </li>
+                  <li data-horizontal-timeline='{"date": "23/05/2015"}'>
+                     // Event description here
+                  </li>
+                  …etc.
+               </ol>
+            </div>
+         </div>
+         <script>
+            $('#example').horizontalTimeline();
+        </script>
+    </body>
+</html>

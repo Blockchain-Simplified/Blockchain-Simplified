@@ -1,0 +1,11 @@
+{
+  "name": "sample",
+  "info": "sample",
+  "nodes": [
+    {
+      "name": "node1",
+      "publicKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDYVjM8eTwwmIKzyshuuAoG+zW\n/N/Pc0SJlTUw/+LGwZCV9wFFD3bEvlNxfwoGrloI+whKF1dCUgnM8z9f3ulMk1Zy\njnM9dsBtIFcZau3bscs/zY1VEia8vkcVbwsOS4T7rFOSueKMVpB03dQVZkjDG+qU\nRp5SEvJUCNMXXEf9jwIDAQAB\n-----END PUBLIC KEY-----",
+      "ipaddr": "127.0.0.1:5000"
+    }
+  ]
+}

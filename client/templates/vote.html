@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Pending Transaction</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+  		background: url('/static/cool-background.png');
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  	    }
+        .button {
+            border: none;
+            border-radius: 2px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inherit;
+            font-size: 26px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .card{
+            position: relative;
+            top: 30vh;
+            left: 35vw;
+            width: 30%;
+            height: 30%;
+            padding: 80px;
+            display: inline;
+        }
+        form{
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" >Blockchain Simplified</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Add Trasaction
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/pending">Pending Transaction
+              <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="card bg-dark">
+    <form action="/vote/{{data["uid"]}}"  method="post">
+        <input type="hidden" name="vote", value="ACCEPT">
+        <button class="button" type="submit" style="background-color: rgb(23, 161, 23);">ACCEPT</button>
+    </form>
+    <form action="/vote/{{data["uid"]}}" method="post">
+        <input type="hidden" name="vote", value="REJECT">
+        <button class="button" type="submit" style="background-color: rgb(221, 24, 24);">REJECT</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/static/vendor/jquery/jquery.slim.min.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+  "info": "sdf",
+  "name": "sdaf",
+  "nodes": [
+    {
+      "ipaddr": "127.0.0.1:5000",
+      "publicKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWePR2dQ2JJMc0XCVfLvKmeuyJ\nEIXooavUwsGpVrWCeqp3YPKdw84nr4vy7GAijiYGg3op+7bt2LFgI1jaryyMTEaT\nKZc9KVm3M4m3Dhcw+c2WB66Zh1/tiqC9IktvlUbE39jgmuU2CWEDhFPMXMKV/VwJ\n62rgQ8bYwsun6UF0GwIDAQAB\n-----END PUBLIC KEY-----"
+    }
+  ]
+}

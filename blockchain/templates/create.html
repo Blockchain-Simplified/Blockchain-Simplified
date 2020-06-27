@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<!--head>
+	<title>INDEX</title>
+	<style type="text/css">
+		#form {
+			border-radius: 10px;
+	        padding: 25px;
+	        background: #000000;
+	        background-position: center;
+	        align-self: center;
+	        opacity:0.8;
+	        width: 40%;
+		}
+
+		input:focus {
+		  border: 3px solid #555;
+		}
+
+		#size {
+			font-size: 12pt;
+			height: 30px;
+		}
+	</style>
+</head-->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base target="_parent">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.0/css/all.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+	<link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.0/css/mdb.min.css">
+	<link rel="stylesheet" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-addons-4.19.0.min.css">
+	<link rel="stylesheet" type="text/css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/mdb-plugins-gathered.min.css">
+	<style></style>
+	<style type="text/css">/* Chart.js */
+	body{
+		height: 100%;
+		/*background: url({{ url_for ('static', filename = 'Frost.jpg') }});*/
+		background: #222448;  /* fallback for old browsers */
+		background: -webkit-radial-gradient(circle, #0157fb 25%, #222448);  /* Chrome 10-25, Safari 5.1-6 */
+		background: radial-gradient(circle, #0157fb 25%, #222448); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+	@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+	</style>
+</head>
+<body>
+	<!--div align="center">
+	<div id="form">
+	<form method="POST" action="/landing">
+		<p><input id="size" type="text" name="name" placeholder="Name" required></p>
+		<p><input id="size" type="text" name="username" placeholder="Username" required></p>
+		<p><input id="size" type="password" name="password" placeholder="Password" required></p>
+		<p><button id="size" type="submit">NEXT</button></p>
+	</form>
+	</div>
+	</div-->
+	<!-- Material form login -->
+<div style="background-color: #000000;">
+	<h3 class="white-text text-center py-4">
+		<strong>BLOCKCHAIN SIMPLIFIED</strong>
+	</h3>
+</div>
+<div style="height: 100px;"></div>
+<div align="center">
+<div class="card" id="form" style="width: 40%;">
+
+  <h4 class="card-header white-text text-center py-4" style="background-color: #228B22;">
+    <strong>Create New BLockchain</strong>
+  </h4>
+
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0">
+
+    <!-- Form -->
+    <form class="text-center" style="color: #757575;" action="/api/v1/createBlockchain" method="POST">
+
+      <div class="md-form">
+        <input type="text" name="nodeName" class="form-control" placeholder="Set A Name To Node">
+      </div>
+
+      <div class="md-form">
+        <input type="text" name="name" class="form-control" placeholder="Set A Name To BlockChain">
+      </div> 
+      
+      <div class="md-form">
+        <input type="text" name="ipaddr" class="form-control" placeholder="IPAddr With Port">
+      </div>
+
+      <div class="md-form">
+        <input type="text" name="info" class="form-control" placeholder="Info about Blockchain">
+      </div>
+
+      <div class="md-form">
+        <input type="text" name="companyName" class="form-control" placeholder="Enter Company Name">
+      </div>
+
+      <div class="md-form">
+        <input type="text" name="companyID" class="form-control" placeholder="Enter Company ID">
+      </div>
+
+      <button class="btn info-color white-text btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">CREATE</button>
+      
+    </form>
+    <!-- Form -->
+
+  </div>
+
+</div>
+</div>
+<!-- Material form login -->
+</body>
+</html>
